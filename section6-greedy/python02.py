@@ -10,12 +10,11 @@ def solution(list,limit):
             break
         for j in range(0,k): # 2 2 3 2
             count=count+1
+            sum=sum+list[i][1]
             if count == limit:
                 flag=1
-                sum=sum+list[i][1]
                 break
-            sum=sum+list[i][1]
-            
+   
     print("sum is ",sum)
     print("count is ",count)
 
